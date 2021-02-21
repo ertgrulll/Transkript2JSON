@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transkript2JSON</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-header">NKU Transkript-JSON Çevirici</h1>
+      <div class="file-loader-container">
+        <label for="pdf-loader" class="loader-label">Dosya Seç</label>
+        <input
+          type="file"
+          name="pdf-loader"
+          id="inpFile"
+          class="inpFile"
+          accept=".pdf"
+          multiple
+        />
+        <p class="note">*Yalnızca .pdf uzantılı dosyalar seçilebilir.</p>
+        <p class="note">
+          **Birden fazla dosyayı tek seferde seçip yükleyebilirsiniz.
+        </p>
+      </div>
+      <p class="credit">Developed by <span class="name">Ertuğrul</span></p>
+    </div>
+    <div id="processing-container"></div>
+    <script
+      src="https://cdn.jsdelivr.net/gh/cosmogicofficial/quantumalert@latest/minfile/quantumalert.js"
+      charset="utf-8"
+    ></script>
+    <script src="./renderer.js" defer sync></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "transkript2json",
+  "version": "1.0.0",
+  "description": "NKU Transkript2JSON",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ertugrul",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-wix-msi": "^3.0.6"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.843.0",
+    "lottie-web": "^5.7.6",
+    "pdf.js-extract": "^0.1.5",
+    "pdfjs-dist": "^2.6.347"
+  }
+}
