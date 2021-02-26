@@ -17,7 +17,6 @@
   "dependencies": {
     "aws-sdk": "^2.843.0",
     "lottie-web": "^5.7.6",
-    "pdf.js-extract": "^0.1.5",
     "pdfjs-dist": "^2.6.347"
   }
 }
