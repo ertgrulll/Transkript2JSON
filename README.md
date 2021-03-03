@@ -5,19 +5,13 @@
 </p>
 <br/>
 
-**İçerik Tablosu**
-
-[TOC]
-
----
-
 ### Nedir?
 
 _Transkript2JSON_ programı, Namık Kemal Üniversitesi'ne ait .pdf uzantılı transkript dosyalarından json tipinde veri oluşturmak için yazılmış desktop uygulamasıdır. Electron.js ve Node.js kullanılarak geliştirilmiştir. Grafik arayüzünün yanı sıra cli üzerinden de çalışabilecek şekilde kodlanmıştır, gelecekte oluşabilecek potansiyel hatalar için debug modu içermektedir.
 
 ---
 
-###Nasıl Çalışır?
+### Nasıl Çalışır?
 
 <ul>
 	<li>Program bir veya daha fazla sayıda dosya ile çalışabilir.</li>
