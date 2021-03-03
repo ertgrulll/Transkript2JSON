@@ -1,22 +1,78 @@
 {
   "name": "transkript2json",
   "version": "1.0.0",
-  "description": "NKU Transkript2JSON",
+  "description": "NKU Transkript2JSON Converter",
   "main": "main.js",
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Ertugrul",
-  "license": "ISC",
+  "author": {
+    "name": "Ertuğrul Yakın",
+    "email": "ertugrul@ertugrulyakin.engineer"
+  },
+  "repository": "https://github.com/ertgrulll/Transkript2JSON",
+  "homepage": "https://github.com/ertgrulll/Transkript2JSON",
+  "license": "MIT",
+  "build": {
+    "appId": "engineer.ertugrulyakin.transkript2json",
+    "productName": "Transkript2JSON",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    },
+    "dmg": {
+      "icon": "./build/icon.icns",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 380,
+          "y": 280,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 110,
+          "y": 280,
+          "type": "file"
+        }
+      ],
+      "window": {
+        "width": 500,
+        "height": 500
+      }
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always"
+    },
+    "linux": {
+      "target": "deb",
+      "category": "Utility",
+      "icon": "./build/icon.icns"
+    },
+    "deb": {},
+    "artifactName": "Transkript2JSON_${version}_setup.${ext}",
+    "forceCodeSigning": false
+  },
   "devDependencies": {
-    "electron": "^11.2.3",
+    "electron": "^11.3.0",
+    "electron-builder": "^22.9.1",
     "electron-wix-msi": "^3.0.6"
   },
   "dependencies": {
     "aws-sdk": "^2.843.0",
     "lottie-web": "^5.7.6",
-    "pdfjs-dist": "^2.6.347"
+    "pdfjs-dist": "^2.6.347",
+    "yargs": "^16.2.0"
   }
 }
