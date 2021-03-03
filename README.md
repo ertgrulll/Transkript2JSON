@@ -55,7 +55,7 @@ _Transkript2JSON_ programı, Namık Kemal Üniversitesi'ne ait .pdf uzantılı t
 			<li>Alt dizin varsa atlar ve terminalde alt bir dizinin atlandığına dair bir uyarı gösterilir.</li>
 			<li>Dizin içerisindeki tüm dosyalar sırasıyla okunup formatları kontrol edilir, pdf olmayan dosyalar atlanır.</li>
 			<li>Pdf dosyalarının içeriği kontrol edilir, transkript olmayan dosyalar atlanır ve terminalde dosyanın atlandığına dair bir uyarı gösterilir.</li>
-			<li>Geçerli transkript dosyaları işlenip dizin içerisinde T2J_OUTT2J_OUT(çalıştırılma_tarihi) adlı bir klasör oluşturulup json dosyaları kayıt edilir.</li>
+			<li>Geçerli transkript dosyaları işlenip dizin içerisinde T2J_OUT(çalıştırılma_tarihi) adlı bir klasör oluşturulup json dosyaları kayıt edilir.</li>
 		</ul>
 	</li>
 </ul>
