@@ -60,7 +60,7 @@ app.on("activate", () => {
 });
 
 function checkIfCalledViaCLI(args) {
-  if (args && args.length > 1) {
+  if (args && args.length > 1 && args[1] != ".") {
     return true;
   }
   return false;
